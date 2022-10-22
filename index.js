@@ -1,3 +1,5 @@
-// run `node index.js` in the terminal
+const io = require('socket.io-client');
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+const socket = io('http://localhost:3010');
+
+socket.on('connect' , () => console.log(socket) ); 
