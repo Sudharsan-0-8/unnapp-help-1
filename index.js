@@ -1,5 +1,5 @@
 const http = require('http');
-const io = require('socket.io-client');
+const { io } = require('socket.io-client');
 
 const server = http.createServer();
 
