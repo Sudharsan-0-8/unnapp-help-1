@@ -6,7 +6,7 @@ const server = http.createServer();
 const socket = io('http://localhost:3010');
 
 
-socket.on('connect' , () => console.log(socket) ); 
+socket.on('connect' , () => console.log('id: ' + socket.id) ); 
 
 socket.on('error' , () => console.log('error') );
 
